@@ -1,5 +1,5 @@
 {
-  "name": "eval",
+  "name": "coda-cli-eval",
   "version": "1.0.1",
   "description": "CLI-Coda",
   "main": "dist/index.js",
