@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import TaskManager from "./models/TaskManagers";
 import Task from "./types/TaskTypes";
 const TaskManagers = new TaskManager();
