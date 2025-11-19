@@ -1,6 +1,6 @@
 
 
-# 📝 TaskCLI
+# 📝 mon-cli
 
 Un gestionnaire de tâches en **ligne de commande** développé en **TypeScript**, avec **CRUD complet**, décorateurs, persistance JSON et tests unitaires.
 
@@ -24,7 +24,7 @@ Un gestionnaire de tâches en **ligne de commande** développé en **TypeScript*
 
 ```bash
 # Cloner le projet
-git clone <ton_repo_git>
+git clone <le repipot>
 
 # Installer les dépendances
 npm install
@@ -36,7 +36,7 @@ npm run build
 npm link
 ```
 
-> Après `npm link`, la commande `taskcli` sera disponible globalement sur votre machine.
+> Après `npm link`, la commande `mon-cli` sera disponible globalement sur votre machine.
 
 ---
 
@@ -45,7 +45,7 @@ npm link
 ### Ajouter une tâche
 
 ```bash
-taskcli add "Titre de la tâche" [status] [priority]
+mon-cli add "Titre de la tâche" [status] [priority]
 ```
 
 * **status** (optionnel) : `pending`, `in-progress`, `completed` (défaut : `pending`)
@@ -54,7 +54,7 @@ taskcli add "Titre de la tâche" [status] [priority]
 **Exemple :**
 
 ```bash
-taskcli add "Apprendre TypeScript" pending high
+mon-cli add "Apprendre TypeScript" pending high
 ```
 
 ---
@@ -62,9 +62,9 @@ taskcli add "Apprendre TypeScript" pending high
 ### Lister les tâches
 
 ```bash
-taskcli list
-taskcli list pending        # filtre par status
-taskcli list 3              # filtre par ID
+mon-cli list
+mon-cli list pending        # filtre par status
+mon-cli list 3              # filtre par ID
 ```
 
 * Affiche toutes les tâches si aucun filtre n’est fourni.
@@ -72,7 +72,7 @@ taskcli list 3              # filtre par ID
 **Exemple :**
 
 ```bash
-taskcli list completed
+mon-cli list 
 ```
 
 ---
@@ -80,7 +80,7 @@ taskcli list completed
 ### Mettre à jour une tâche
 
 ```bash
-taskcli update <id> [options]
+mon-cli update <id> [options]
 ```
 
 **Options disponibles :**
@@ -94,7 +94,7 @@ taskcli update <id> [options]
 **Exemple :**
 
 ```bash
-taskcli update 1 --title "Nouvelle tâche" --status completed --priority high
+mon-cli update 1 --title "Nouvelle tâche" --status completed --priority high
 ```
 
 ---
@@ -102,13 +102,13 @@ taskcli update 1 --title "Nouvelle tâche" --status completed --priority high
 ### Supprimer une tâche
 
 ```bash
-taskcli delete <id>
+mon-cli delete <id>
 ```
 
 **Exemple :**
 
 ```bash
-taskcli delete 2
+mon-cli delete 2
 ```
 
 ---
